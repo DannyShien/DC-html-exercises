@@ -62,13 +62,53 @@ body {
     justify-content: center; 
     align-items: center;
 }
+
+.about-me {
+    padding: 0 10px;
+
+}
+
+.about-me p {
+    margin: 0 auto;
+}
+
 /* container determines max size */
 .profile-image {
-    width: 150px;
-
+    width: 300px;
+    margin: 0 auto;
 }
 /* img adapts to container */
 .profile-image img {
     width: 100%;
+    border-radius: 50px;
 }
 
+/*
+Responsive Web Design Inplementation
+A.K.A. Media Queries!
+if/else statements for CSS
+*/
+
+/* Common "breakpoints" 
+
+500px
+768px
+1024px
+1200px
+1400
+
+*/
+
+@media screen and (min-width: 500px) {
+    .profile-image {
+        outline: 5px solid red; 
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .profile-image {
+        outline: 5px solid red; 
+        width: 400px;
+    }
+}
