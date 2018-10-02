@@ -1,0 +1,51 @@
+
+html, body {
+    /* single value for all 4 sides */
+    padding: 0; 
+    margin: 0;
+    
+}
+
+body {
+    /* outline: 1px solid blue; */
+}
+
+.header-text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* h1   */
+/* id: #logo-text */
+.logo-text 
+{
+    color: rgba(0, 0, 0, 0.9); 
+    font-size: 20px;
+    display: inline-block;
+    /* outline: 1px solid red; ....outline does not take up space and border does */
+    /* background-color: yellow; */
+    margin-right: 20px;
+}
+
+.nav-container {
+    display: inline-block;
+    /* outline: 1px solid blue; */
+    margin-right: 8px;
+}
+
+.nav-link { 
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.hero-image {
+    /* Because the image is in a different folder,
+    must use ../images/ before the file name. */
+    background-image: url(../images/IMG_1146.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    min-width: 100%;
+
+}
