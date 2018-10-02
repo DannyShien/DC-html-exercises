@@ -19,16 +19,17 @@ body {
 .logo-text 
 {
     color: rgba(0, 0, 0, 0.9); 
-    font-size: 20px;
+    font-size: 26px;
     display: inline-block;
     /* outline: 1px solid red; ....outline does not take up space and border does */
     /* background-color: yellow; */
     margin-right: 20px;
+    margin_left: 20px;
 }
 
 .nav-container {
     display: inline-block;
-    /* outline: 1px solid blue; */
+    outline: 1px solid blue;
     margin-right: 8px;
 }
 
@@ -36,6 +37,7 @@ body {
     color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
     margin-right: 8px;
+    font-size: 18px;
 }
 
 .hero-image {
@@ -60,3 +62,13 @@ body {
     justify-content: center; 
     align-items: center;
 }
+/* container determines max size */
+.profile-image {
+    width: 150px;
+
+}
+/* img adapts to container */
+.profile-image img {
+    width: 100%;
+}
+
