@@ -43,10 +43,15 @@ body {
     must use ../images/ before the file name. */
     background-image: url(../images/IMG_1146.JPG);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     min-height: 500px;
     min-width: 100%;
+}
+
+.hero-image h2 {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(127, 255, 212, .8);
 }
 
 /* Flexbox! */
