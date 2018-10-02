@@ -47,5 +47,11 @@ body {
     background-size: cover;
     min-height: 500px;
     min-width: 100%;
+}
 
+/* Flexbox! */
+.center-center {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
