@@ -10,7 +10,7 @@
     <title>Styling with CSS</title>
 </head>
 <body>
-    <header header-text>
+    <header class="header-text">
         <h1 class="logo-text">
             Stanley Chen
         </h1>
@@ -21,13 +21,18 @@
         </nav>
     </header>
     <section class="hero-image center-center">
-        <h2>Total wipeout</h2>
+        <h2 class="hero-text">Total wipeout</h2>
     </section>
     <section class="about-me">
-        <h3>About Me</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ipsam quod quae voluptatem voluptates error dicta nostrum laborum, temporibus aliquid ut dolore. Consectetur quibusdam ratione atque recusandae consequatur doloribus sed?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quam. Architecto magni quos iure rerum magnam mollitia placeat, nobis voluptatibus doloribus culpa sed facilis laborum, reprehenderit dolor nostrum hic id?</p>
-        <div class="profile-image">
+        <!-- 
+            To change the lawout with a media query we need to wrap the h3 and p tags with an additional "wrapper container" div.
+        -->
+        <div class="about-me-container">
+            <h3>About Me</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ipsam quod quae voluptatem voluptates error dicta nostrum laborum, temporibus aliquid ut dolore. Consectetur quibusdam ratione atque recusandae consequatur doloribus sed?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quam. Architecto magni quos iure rerum magnam mollitia placeat, nobis voluptatibus doloribus culpa sed facilis laborum, reprehenderit dolor nostrum hic id?</p>
+        </div>
+        <div class="profile-image center-center">
             <img src="images/profile_img.jpg" alt="">
         </div>
     </section>

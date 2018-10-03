@@ -1,3 +1,9 @@
+html {
+    box-sizing: border-box; 
+}
+*, *: before, *:after {
+    box-sizing: inherit;
+}
 
 html, body {
     /* single value for all 4 sides */
@@ -29,7 +35,7 @@ body {
 
 .nav-container {
     display: inline-block;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
     margin-right: 8px;
 }
 
@@ -51,7 +57,7 @@ body {
     min-width: 100%;
 }
 
-.hero-image h2 {
+.hero-text {
     font-family: 'Rubik', sans-serif;
     color: rgb(127, 255, 212, .8);
 }
@@ -59,8 +65,8 @@ body {
 /* Flexbox! */
 .center-center {
     display: flex; 
-    justify-content: center; 
-    align-items: center;
+    justify-content: center; /* adjusting main axis(x)*/
+    align-items: center; /* adjusting cross axiz(y) */
 }
 
 .about-me {
@@ -68,19 +74,20 @@ body {
 
 }
 
-.about-me p {
+/* .about-me p {
     margin: 0 auto;
-}
+} */
 
 /* container determines max size */
 .profile-image {
-    width: 300px;
+    width: 350px;
     margin: 0 auto;
+    padding-top: 10px;
 }
 /* img adapts to container */
 .profile-image img {
     width: 100%;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 /*
@@ -99,16 +106,53 @@ if/else statements for CSS
 
 */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
+    .header-text {
+        display: flex;
+        justify-content: space-around;
+        align-items: center
+    }
+
     .profile-image {
-        outline: 5px solid red; 
-        width: 400px;
+        /* outline: 1px solid red;  */
+        width: 250px;
+        /* padding-top: 10px; */
+    }   
+    .about-me {
+        display: flex;
+        /* flex-direction: row; */
+    }
+    /* "Direct child" selector */
+    .about-me > div
+    {
+
+    }
+    .about-me-container {
+        /* outline: 1px solid red; */
+        width: 70%;
+        padding-right: 18px;
+
     }
 }
 
-@media screen and (min-width: 700px) {
-    .profile-image {
-        outline: 5px solid red; 
-        width: 400px;
+@media screen and (min-width: 900px) {
+    .hero-text {
+        /* outline: 1px solid red;  */
+        font-size: 48px;
     }
-}
+
+    .header-text {
+        display: flex;
+        justify-content: space-around;
+        align-items: center
+    }
+
+    .header-text > * { 
+        /* outline: 1px solid red; */
+    }
+
+    .header-text > nav {
+        display: none;
+    }
+} 
+
