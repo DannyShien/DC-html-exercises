@@ -22,8 +22,7 @@ body {
 
 /* h1   */
 /* id: #logo-text */
-.logo-text 
-{
+.logo-text {
     color: rgba(0, 0, 0, 0.9); 
     font-size: 26px;
     display: inline-block;
@@ -59,7 +58,7 @@ body {
 
 .hero-text {
     font-family: 'Rubik', sans-serif;
-    color: rgb(127, 255, 212, .8);
+    color: rgb(104, 208, 240);
 }
 
 /* Flexbox! */
@@ -70,6 +69,7 @@ body {
 }
 
 .about-me {
+    outline: 1px solid red;
     padding: 0 10px;
 
 }
@@ -88,6 +88,21 @@ body {
 .profile-image img {
     width: 100%;
     border-radius: 50%;
+}
+
+.contact-links {
+    outline: 1px solid red;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    padding: 12px 12px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-links .fab {
+    color: rgb(96, 192, 236);
+    padding: 0 10px;
+    font-size: 24px;
 }
 
 /*
@@ -110,7 +125,7 @@ if/else statements for CSS
     .header-text {
         display: flex;
         justify-content: space-around;
-        align-items: center
+        align-items: center;
     }
 
     .profile-image {
