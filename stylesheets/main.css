@@ -80,7 +80,7 @@ body {
 
 /* container determines max size */
 .profile-image {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     width: 350px;
     margin: 0 auto;
     padding-top: 0 10px;
@@ -92,8 +92,8 @@ body {
 }
 
 .contact-links {
-    outline: 1px solid red;
-    /* background-color: rgba(0, 0, 0, 0.9); */
+    /* outline: 1px solid red; */
+    background-color: floralwhite;
     padding: 12px 12px;
     display: flex;
     justify-content: center;
@@ -102,14 +102,22 @@ body {
 
 .contact-links .fab {
     color: rgb(96, 192, 236);
-    padding: 0 10px;
+    /* padding: 0 10px; */
+    margin: 0 10px;
     font-size: 24px;
+    /* transition: font-size .5s, color: red; */
+    transition: all .5s;
+}
+
+.contact-links a:hover {
+    cursor: pointer;
 }
 
 .contact-links a:hover .fab
 /* .contact-links a:active .fab    */
 {
     color: grey;
+    font-size: 30px;
 }
 
 /*
