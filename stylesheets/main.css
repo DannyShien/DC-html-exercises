@@ -69,8 +69,8 @@ body {
 }
 
 .about-me {
-    outline: 1px solid red;
-    padding: 0 10px;
+    /* outline: 1px solid red; */
+    padding: 12px 10px;
 
 }
 
@@ -80,9 +80,10 @@ body {
 
 /* container determines max size */
 .profile-image {
+    outline: 1px solid red;
     width: 350px;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 0 10px;
 }
 /* img adapts to container */
 .profile-image img {
@@ -103,6 +104,12 @@ body {
     color: rgb(96, 192, 236);
     padding: 0 10px;
     font-size: 24px;
+}
+
+.contact-links a:hover .fab
+/* .contact-links a:active .fab    */
+{
+    color: darkolivegreen;
 }
 
 /*
